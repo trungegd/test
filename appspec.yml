@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/BBE4.7_new
+    destination: /var/www/bbe-master
     overwrite: true
 hooks:
   BeforeInstall:
