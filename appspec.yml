@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/BBE4.7_new
+    overwrite: true
+hooks:
+  BeforeInstall:
+
+  AfterInstall:
+
+  ApplicationStop:
