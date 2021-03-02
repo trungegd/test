@@ -1,6 +1,6 @@
 2
 develop comit 1
 develop commit 1
-
+ # Remove this comment
 feature commit 3
 feature commit 3
