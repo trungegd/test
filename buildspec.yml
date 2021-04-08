@@ -1,12 +1,21 @@
-version: 0.0
-os: linux
-files:
-  - source: /
-    destination: /var/www/bbe-master
-    overwrite: true
-hooks:
-  BeforeInstall:
+version: 0.2
 
-  AfterInstall:
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - pwd
+      - ls
+  post_build:
+    commands:
+      - echo Build completed on `date`
 
-  ApplicationStop:
+artifacts:
+  files:
+    - '**/*'
