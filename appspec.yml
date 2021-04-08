@@ -2,8 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/bbe
+    destination: /var/www/test
     overwrite: true
+    file_exists_behavior: true
 hooks:
   BeforeInstall:
 
