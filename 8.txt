@@ -1,2 +1,3 @@
 this is content of 8.txt
 append new line 1
+this is content of same version with 9.txt commit
